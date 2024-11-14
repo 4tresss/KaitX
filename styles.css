@@ -49,11 +49,8 @@ input[type="file"],
     border-radius: 4px;
 }
 
-.gender::before {
-    width: 1rem;
-    background-image: url("img/gender.png");
-    background-repeat: no-repeat;
-    background-position: center;
+img {
+    width: 7%;
 }
 
 .identityFile {

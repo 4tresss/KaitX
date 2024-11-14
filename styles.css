@@ -49,9 +49,12 @@ input[type="file"],
     border-radius: 4px;
 }
 
-input[type="file"] {
-    background: #2E2D3D;
-}
+.custom-file-upload {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+  }
 
 button {
     padding: 10px;

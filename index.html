@@ -11,16 +11,16 @@
         <h1>Регистрация на сайте</h1>
         <form id="registrationForm">
             <label for="fullName">ФИО</label>
-            <input type="text" id="fullName" name="fullName" maxlength="50" required>
+            <input type="text" id="fullName" name="fullName" maxlength="50" placeholder="Введите своё ФИО" required>
 
             <label for="email">Почта</label>
-            <input type="email" id="email" name="email" maxlength="100" required>
+            <input type="email" id="email" name="email" maxlength="100" placeholder="Введите свою почту" required>
 
             <label for="password">Пароль</label>
-            <input type="password" id="password" name="password" maxlength="20" required>
+            <input type="password" id="password" name="password" maxlength="20" placeholder="Введите пароль" required>
 
             <label for="birthDate">Дата рождения</label>
-            <input type="date" id="birthDate" name="birthDate" required>
+            <input type="date" id="birthDate" name="birthDate" value="2001-09-11" required>
 
             <label>Пол</label>
             <div class="gender">
@@ -28,8 +28,8 @@
                 <label><input type="radio" name="gender" value="female" required> Женский</label>
             </div>
 
-            <label for="identityFile">Подтверждение личности</label>
-            <input type="file" id="identityFile" name="identityFile" accept=".jpg, .jpeg, .png, .pdf" required>
+            <label for="identityFile" class="identityFile">Подтверждение личности</label>
+            <input type="file" id="identityFile" name="identityFile" accept=".jpg, .jpeg, .png, .pdf" hidden required>
 
             <button type="submit">Зарегистрироваться</button>
         </form>

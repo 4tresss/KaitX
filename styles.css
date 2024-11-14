@@ -46,12 +46,12 @@ input[type="file"],
 .gender {
     margin-bottom: 10px;
     padding: 8px;
-    border-radius: 4px;
+    border-radius: 6px;
 }
 
 .gender label {
     display: inline-block;
-    margin-left: 90px;
+    margin-left: 85px;
     border: 2px solid transparent;
     border-radius: 10px;
     overflow: visible;
@@ -64,15 +64,17 @@ input[type="file"],
 }
 
 .gender img {
-    width: 30px;
-    height: 30px;
+    width: 35px;
+    height: 35px;
     transition: transform 0.3s;
+}
+
+.gender img:hover {
+    transform: scale(1.5);
 }
 
 .gender input[type="radio"]:checked + img {
     transform: scale(1.5);
-    border-radius: 50%;
-    
 }
 
 .identityFile {
@@ -121,7 +123,6 @@ select {
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .modal-content {
@@ -130,7 +131,7 @@ select {
     padding: 20px;
     width: 80%;
     max-width: 400px;
-    background-color: white;
+    background-color: #2E2D3D;
     border-radius: 8px;
     text-align: center;
 }
@@ -141,9 +142,13 @@ select {
     right: 15px;
     font-size: 20px;
     cursor: pointer;
-    color: #555;
+    color: #AFB2BF;
 }
 
 .close-button:hover {
-    color: #000;
+    color: #eaebf1;
+}
+
+h2 {
+    color: #AFB2BF;
 }

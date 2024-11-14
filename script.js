@@ -50,7 +50,7 @@ document.getElementById('registrationForm').addEventListener('submit', function(
         showModal();
         setTimeout(function() {
             window.location.href = "https://kait20.mskobr.ru/teacher-card/gevorgyan-arsen-armanovich";
-        }, 3000); // Через 3 секунды после показа модального окна
+        }, 3000);
     }
 });
 
@@ -83,4 +83,27 @@ function showError(fieldId, message) {
 function clearErrors() {
     const errors = document.querySelectorAll('.error-message');
     errors.forEach(error => error.remove());
+}
+
+function showModal() {
+    const modal = document.getElementById('successModal');
+    const container = document.querySelector('.container');
+
+    modal.style.display = 'block';
+    container.style.display = 'none';
+
+    const closeButton = document.querySelector('.close-button');
+    closeButton.addEventListener('click', function() {
+        modal.style.display = 'none';
+        container.style.display = 'block';
+        window.location.href = "https://kait20.mskobr.ru/teacher-card/gevorgyan-arsen-armanovich";
+    });
+
+    window.addEventListener('click', function(event) {
+        if (event.target == modal) {
+            modal.style.display = 'none';
+            container.style.display = 'block';
+            window.location.href = "https://kait20.mskobr.ru/teacher-card/gevorgyan-arsen-armanovich";
+        }
+    });
 }

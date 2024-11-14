@@ -62,6 +62,13 @@ button:hover {
     background-color: #45a049;
 }
 
+input,
+textarea,
+select {
+    background: #2E2D3D;
+    color: #FAFAFA;
+}
+
 .gender label {
     display: inline-block;
     margin-right: 10px;
